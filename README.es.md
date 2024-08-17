@@ -7,7 +7,7 @@ Este script añade efectos de partículas de humo a tu vehículo en el juego. El
 ## Instalación
 
 1. **Añadir el Script:**
-   - Copia el archivo `nos_purge.lua` y pégalo en la carpeta `extension` de tu proyecto. La ruta exacta puede variar dependiendo de tu configuración, pero suele ser algo como `steamapps\common\assettocorsa\content\cars\jfp_vw_golf_mk4_r32/extension`.
+   - Copia el archivo `nos_purge.lua` y pégalo en la carpeta `extension` de tu proyecto. La ruta exacta puede variar dependiendo de tu configuración, pero suele ser algo como `steamapps\common\assettocorsa\content\cars\jfp_vw_golf_mk4_r32\extension`.
 
 2. **Configurar el Script en el Archivo de Configuración:**
    - Abre el archivo `ext_config.ini` que se encuentra en la misma carpeta que tu script.
