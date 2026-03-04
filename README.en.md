@@ -1,8 +1,11 @@
 # Particle Script Installation and Configuration
 
+> [!NOTE]
+> **[Versión en español disponible aquí](README.md)**
+
 ## Description
 
-This script adds smoke particle effects to your vehicle in the game. The script was created by @jonatanfp_.
+This script adds smoke particle effects to your vehicle in the game. The script was created by @jonatanfp\_.
 
 ## Installation
 
