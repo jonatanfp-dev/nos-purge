@@ -9,6 +9,8 @@
 
 </div>
 
+🌐 **Also available in:** [Spanish](README.es.md)
+
 ---
 
 ## Description
@@ -53,7 +55,6 @@ Open the `ext_config.ini` file in the same folder and add at the end:
 
 ```ini
 [SCRIPT_0]
-[Español](README.es.md)
 SCRIPT=nos_purge.lua
 SKIP_FRAMES=0
 ACTIVE_FOR_NEAREST=4
