@@ -3,6 +3,9 @@
 # NOS Purge — Assetto Corsa
 
 [![MIT License](https://img.shields.io/badge/Licencia-MIT-verde.svg)](LICENSE)
+
+[🇬🇧 English](README.md)
+
 ![Lua](https://img.shields.io/badge/lua-CSP-Script-2C2D72)
 
 **Efectos realistas de partículas de humo NOS Purge para vehículos en Assetto Corsa.**
