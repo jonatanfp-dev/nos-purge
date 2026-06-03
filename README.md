@@ -53,7 +53,7 @@ Open the `ext_config.ini` file in the same folder and add at the end:
 
 ```ini
 [SCRIPT_0]
-[🇪🇸 Español](README.es.md)
+[Español](README.es.md)
 SCRIPT=nos_purge.lua
 SKIP_FRAMES=0
 ACTIVE_FOR_NEAREST=4

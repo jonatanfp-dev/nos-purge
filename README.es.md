@@ -4,7 +4,7 @@
 
 [![MIT License](https://img.shields.io/badge/Licencia-MIT-verde.svg)](LICENSE)
 
-[🇬🇧 English](README.md)
+[English](README.md)
 
 ![Lua](https://img.shields.io/badge/lua-CSP-Script-2C2D72)
 
