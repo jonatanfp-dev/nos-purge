@@ -10,10 +10,12 @@
 
 </div>
 
-🌐 **También disponible en:** [Inglés](README.md)
 
 ---
 
+🌐 **También disponible en:** [Inglés](README.md)
+
+---
 ## Descripción
 
 Este script de Lua añade efectos realistas de humo NOS Purge a tus vehículos en Assetto Corsa. Al activarse mediante el botón `ExtraE` en Content Manager, el script emite dos columnas de humo desde la parte trasera del vehículo, simulando un sistema de purga de nitro real.

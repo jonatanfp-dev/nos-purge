@@ -9,10 +9,12 @@
 
 </div>
 
-🌐 **Also available in:** [Spanish](README.es.md)
 
 ---
 
+🌐 **Also available in:** [Spanish](README.es.md)
+
+---
 ## Description
 
 This Lua script adds realistic NOS purge smoke effects to your vehicles in Assetto Corsa. When activated via the `ExtraE` button in Content Manager, the script emits dual smoke trails from the rear of the vehicle, simulating a real nitrous purge system.
