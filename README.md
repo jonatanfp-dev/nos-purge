@@ -1,50 +1,95 @@
-# Nos purge effect | Assetto Corsa
+<div align="center">
 
-> [!NOTE]
-> **[English version available here](README.en.md)**
+# NOS Purge — Assetto Corsa
 
-## 🔍 Preview
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![Lua](https://img.shields.io/badge/lua-CSP-Script-2C2D72)
 
-![Miniatura del Video](assets/uRphsYINl9c_640x480.jpg)
+**Realistic NOS purge smoke particle effects for Assetto Corsa vehicles.**
 
-[YouTube](https://www.youtube.com/watch?v=uRphsYINl9c)
+</div>
 
 ---
 
-# Instalación y Configuración del Script de Partículas
+## Description
 
-## Descripción
+This Lua script adds realistic NOS purge smoke effects to your vehicles in Assetto Corsa. When activated via the `ExtraE` button in Content Manager, the script emits dual smoke trails from the rear of the vehicle, simulating a real nitrous purge system.
 
-Este script añade efectos de partículas de humo a tu vehículo en el juego. El script ha sido creado por @jonatanfp\_.
+Created for use with CSP (Custom Shaders Patch) Particle FX system.
 
-## Instalación
+---
 
-1. **Añadir el Script:**
-   - Copia el archivo `nos_purge.lua` y pégalo en la carpeta `extension` de tu proyecto. La ruta exacta puede variar dependiendo de tu configuración, pero suele ser algo como `steamapps\common\assettocorsa\content\cars\jfp_vw_golf_mk4_r32\extension`.
+## Features
 
-2. **Configurar el Script en el Archivo de Configuración:**
-   - Abre el archivo `ext_config.ini` que se encuentra en la misma carpeta que tu script.
-   - Añade la siguiente configuración al final del archivo:
-     ```ini
-     [SCRIPT_0]
-     SCRIPT=nos_purge.lua
-     SKIP_FRAMES=0
-     ACTIVE_FOR_NEAREST=4
-     ACTIVE_FOR_UNFOCUSED=1
-     ```
+- Realistic NOS purge smoke with customizable particle properties
+- Easy installation via Content Manager
+- Dual smoke emission points for authentic NOS purge effect
+- Adjustable parameters: color, thickness, life, size, spread, and velocity
+- Lightweight — minimal performance impact
 
-3. **Activar el Script:**
-   - El script se activa utilizando la opción `ExtraE` en Content Manager.
+---
 
-## Código del Script
+## Requirements
 
-El script `nos_purge.lua` contiene el siguiente código:
+- Assetto Corsa
+- Content Manager
+- Custom Shaders Patch (CSP)
+
+---
+
+## Installation
+
+### 1. Add the Script
+
+Copy `nos_purge.lua` to the `extension` folder of your car:
+
+```
+steamapps/common/assettocorsa/content/cars/[your-car]/extension/
+```
+
+### 2. Configure `ext_config.ini`
+
+Open the `ext_config.ini` file in the same folder and add at the end:
+
+```ini
+[SCRIPT_0]
+SCRIPT=nos_purge.lua
+SKIP_FRAMES=0
+ACTIVE_FOR_NEAREST=4
+ACTIVE_FOR_UNFOCUSED=1
+```
+
+### 3. Activate in Content Manager
+
+Launch Content Manager and make sure the `ExtraE` option is enabled for the script to function.
+
+---
+
+## Usage
+
+Once installed and configured, the NOS purge smoke activates automatically when you press the `ExtraE` button while driving.
+
+---
+
+## Customization
+
+You can tweak the particle properties in `nos_purge.lua`:
+
+| Property | Description | Default |
+|---|---|---|
+| `color` | Smoke color and transparency | white / 0.1 alpha |
+| `thickness` | Smoke density | 1 |
+| `life` | Particle duration | 1 |
+| `size` | Particle size | 0.001 |
+| `spreadK` | Spread coefficient | 1 |
+| `growK` | Growth coefficient | 2 |
+| `targetYVelocity` | Vertical velocity | 15 |
+
+---
+
+## Script
 
 ```lua
------------------------------------
--- script created by @jonatanfp_ --
------------------------------------
-
 local properties = {
     color = rgbm(255, 255, 255, 0.1),
     colorConsistency = 0.5,
@@ -65,30 +110,3 @@ function script.update(dt)
     end
 end
 ```
-
-## Explicación del Código
-
-- **Propiedades del Humo:**
-  - `color`: Color y transparencia del humo.
-  - `colorConsistency`: Consistencia del color.
-  - `thickness`: Grosor del humo.
-  - `life`: Duración del humo.
-  - `size`: Tamaño de las partículas de humo.
-  - `spreadK`: Coeficiente de dispersión.
-  - `growK`: Coeficiente de crecimiento.
-  - `targetYVelocity`: Velocidad vertical objetivo.
-
-- **Función `script.update(dt)`:**
-  - El humo se emite cuando `car.extraE` está activado.
-
-## Activación en Content Manager
-
-- Abre Content Manager y asegúrate de que `ExtraE` está activado para que el script funcione.
-
----
-
-## 📫 Contacto | Contact
-
-- **Email:** [jonatanfp@x0void.com](mailto:jonatanfp@x0void.com)
-- **Instagram:** [@jonatanfp\_](https://instagram.com/jonatanfp_)
-- **X Corp / Twitter:** [@jonatanfp\_](https://twitter.com/jonatanfp_)
